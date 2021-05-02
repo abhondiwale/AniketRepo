@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Create & consume RestFramework To Search record</title>
+
+</head>
+
+<body>
+<center>
+    <h1>How To Create & Consume REST Framework To search Record</h1>
+    <h3>Django REST Framework</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table border="1">
+            <tr>
+                <td>Movie_Name</td>
+                <td><input type="text" placeholder="Movie Name..." name="moviename"></td>
+            </tr>
+            <tr>
+                <td>director name</td>
+                <td><input type="text" placeholder="director Name..." name="directorname"></td>
+            </tr>
+
+            <tr>
+                <td>genre</td>
+                <td><input type="text" placeholder="genre type..." name="genretype"></td>
+            </tr>
+            <tr>
+                <td>ratings</td>
+                <td><input type="number" placeholder="ratings..." name="movieratings"></td>
+            </tr>
+            <tr>
+                <td>dateofrelease</td>
+                <td><input type="date" placeholder="dateofrelease..." name="dateofrelease"></td>
+            </tr>
+        </table>
+        <input type="submit" onfocus="this.value" value="Insert"/>
+    </form>
+    <h1></h1>
+    <h1></h1>
+    <form class="add_your_class" method="GET" action="/search">
+        <input class="add_your_class" type="search" name="query" id="search">
+        <button class="add_your_class" type="submit"> Search</button>
+    </form>
+
+
+</center>
+</body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search Result</title>
+</head>
+<body>
+
+{% for post in allmovies %}
+
+<ul>
+    <li>'id: '{{post.id}}</li>
+    <li>'name: '{{post.name}}</li>
+    <li>'director: '{{post.director}}</li>
+    <li>'ratings: '{{post.ratings}}</li>
+    <li>'date: '{{post.date}}</li>
+</ul>
+{% endfor %}
+
+
+</body>
+</html>

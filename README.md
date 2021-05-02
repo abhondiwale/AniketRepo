@@ -1,5 +1,6 @@
-Application contains project files
-newMovie contains app files
+Application contains project files:
+
+newMovie contains app files:
 
 The application flow:
 
